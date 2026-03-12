@@ -26,7 +26,7 @@ No external UI library. Styling done entirely with CSS Modules.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/fieldops.git
+[git clone https://github.com/VAIBHAV1516N/FieldOps-Construction-Management-System.git]
 cd fieldops
 
 # 2. Install dependencies
