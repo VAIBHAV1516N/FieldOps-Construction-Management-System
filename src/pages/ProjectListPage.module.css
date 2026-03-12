@@ -1,0 +1,258 @@
+.page {
+  min-height: 100vh;
+  background: #0f1923;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  color: #f9fafb;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.pageMeta {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.searchWrap {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  background: #1a2635;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px 10px 38px;
+  color: #f9fafb;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.searchInput::placeholder {
+  color: #4b5563;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #1a2635;
+  color: #9ca3af;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filterBtn:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #d1d5db;
+}
+
+.filterActive {
+  background: #10b981 !important;
+  color: #fff !important;
+  border-color: #10b981 !important;
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+}
+
+.emptyIcon {
+  font-size: 44px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.emptyTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #9ca3af;
+}
+
+.emptyDesc {
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #1a2635;
+  border-radius: 16px;
+  border: 1.5px solid rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #10b981;
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
+}
+
+.card:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.projectId {
+  color: #4b5563;
+  font-size: 12px;
+}
+
+.projectName {
+  color: #f9fafb;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.metaRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.metaItem {
+  min-width: 0;
+}
+
+.metaLabel {
+  color: #6b7280;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+.metaValue {
+  color: #d1d5db;
+  font-size: 13px;
+}
+
+.progressBlock {
+  margin-bottom: 14px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.progressLabel {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.progressValue {
+  color: #10b981;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.progressTrack {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.cta {
+  text-align: right;
+  color: #10b981;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

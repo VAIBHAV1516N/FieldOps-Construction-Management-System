@@ -1,0 +1,192 @@
+.page {
+  min-height: 100vh;
+  background: #0f1923;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.logoBlock {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.logoIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.brandName {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #f0fdf4;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.tagline {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.card {
+  background: #1a2635;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 32px 28px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.cardTitle {
+  color: #f9fafb;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.cardSubtitle {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.authError {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  color: #fca5a5;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.fieldGroup {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  background: #0f1923;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #f9fafb;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #10b981;
+}
+
+.input::placeholder {
+  color: #4b5563;
+}
+
+.inputError {
+  border-color: #ef4444 !important;
+}
+
+.passwordWrap {
+  position: relative;
+}
+
+.passwordWrap .input {
+  padding-right: 44px;
+}
+
+.togglePw {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6b7280;
+  padding: 0;
+  line-height: 1;
+}
+
+.errorMsg {
+  color: #f87171;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  background: #064e3b;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.demoHint {
+  text-align: center;
+  color: #4b5563;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.demoValue {
+  color: #10b981;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
